@@ -40,7 +40,7 @@ func SyncPac() {
     }
     
     if needGenerate {
-        GeneratePACFile()
+        _ = GeneratePACFile()
     }
 }
 
@@ -274,3 +274,4 @@ func UpdatePACFromWhiteList(){
             }
     }
 }
+

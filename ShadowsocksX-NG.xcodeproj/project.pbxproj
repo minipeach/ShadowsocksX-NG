@@ -860,6 +860,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ShadowsocksX-NG/ShadowsocksX-NG-Bridging-Header.h";
@@ -891,6 +892,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ShadowsocksX-NG/ShadowsocksX-NG-Bridging-Header.h";
@@ -934,6 +936,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -943,6 +946,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

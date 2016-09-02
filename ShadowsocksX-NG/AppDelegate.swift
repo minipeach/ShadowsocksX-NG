@@ -69,7 +69,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             "WhiteListURL": "https://raw.githubusercontent.com/breakwa11/gfw_whitelist/master/whitelist.pac",
             "WhiteListIPURL": "https://raw.githubusercontent.com/breakwa11/gfw_whitelist/master/whiteiplist.pac",
             "AutoConfigureNetworkServices": NSNumber(value: true)
-        ])
+            ] as! Dictionary<String, AnyObject>)
         
         statusItem = NSStatusBar.system().statusItem(withLength: 20)
         let image = NSImage(named: "menu_icon")
