@@ -181,7 +181,7 @@ func UpdatePACFromGFWList() {
     }
     
     let url = UserDefaults.standard.string(forKey: "GFWListURL")
-    Alamofire.request(url!, withMethod: .get)
+    Alamofire.request(url!, method: .get)
         .responseString {
             response in
             if response.result.isSuccess {
@@ -219,7 +219,7 @@ func UpdatePACFromWhiteList(){
     }
     
     let url = UserDefaults.standard.string(forKey: "WhiteListURL")
-    Alamofire.request(url!, withMethod: .get)
+    Alamofire.request(url!, method: .get)
         .responseString {
             response in
             if response.result.isSuccess {
@@ -247,7 +247,7 @@ func UpdatePACFromWhiteList(){
     }
     
     let IPURL = UserDefaults.standard.string(forKey: "WhiteListIPURL")
-    Alamofire.request(IPURL!, withMethod: .get)
+    Alamofire.request(IPURL!, method: .get)
         .responseString {
             response in
             if response.result.isSuccess {
